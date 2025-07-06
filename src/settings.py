@@ -8,6 +8,7 @@ BASE_DIR = Path(__file__).parent.parent
 
 class Settings(BaseSettings):
     POSTGRESQL_DSN: str
+    SECRET_KEY: str
 
     model_config = SettingsConfigDict(env_file=f"{BASE_DIR}/.env")
 
